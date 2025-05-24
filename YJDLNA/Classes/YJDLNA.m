@@ -36,7 +36,7 @@
     self = [super init];
     if (self) {
         self.upd = [CLUPnPServer shareServer];
-        self.upd.searchTime = 5;
+        self.upd.searchTime = 1000;
         self.upd.delegate = self;
         self.dataArray = [NSMutableArray array];
     }
@@ -99,6 +99,12 @@
     [self.upd start];
 }
 
+/**
+ 停止搜索
+ */
+- (void)stopSearch {
+    [self.upd stop];
+}
 
 /**
  设置音量

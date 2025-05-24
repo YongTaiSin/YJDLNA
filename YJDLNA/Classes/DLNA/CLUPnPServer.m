@@ -64,21 +64,29 @@
     return [NSString stringWithFormat:@"M-SEARCH * HTTP/1.1\r\nHOST: %@:%d\r\nMAN: \"ssdp:discover\"\r\nMX: 3\r\nST: %@\r\nUSER-AGENT: iOS UPnP/1.1 mccree/1.0\r\n\r\n", ssdpAddres, ssdpPort, serviceType_AVTransport];
 }
 
-- (void)start{
+- (void)connect {
     NSError *error = nil;
     if (![_udpSocket bindToPort:ssdpPort error:&error]){
-        [self onError:error];
+        NSLog(@"UDP绑定本地端口错误，重复绑定错误可忽略:\n%@\n", error);
+    }
+    
+    if (![_udpSocket enableBroadcast:YES error:&error]){
+        NSLog(@"UDP广播错误，可忽略:\n%@\n", error);
+    }
+    
+    if (![_udpSocket joinMulticastGroup:ssdpAddres error:&error])
+    {
+        NSLog(@"UDP加入组网错误，重复加入错误可忽略:\n%@\n", error);
     }
     
     if (![_udpSocket beginReceiving:&error])
     {
         [self onError:error];
     }
-    
-    if (![_udpSocket joinMulticastGroup:ssdpAddres error:&error])
-    {
-        [self onError:error];
-    }
+}
+
+- (void)start{
+    [self connect];
     [self search];
 }
 
@@ -90,7 +98,8 @@
     // 搜索前先清空设备列表
     [self.deviceDictionary removeAllObjects];
     self.receiveDevice = YES;
-    [self onChange];
+    // 避免定时刷新导致刷新闪烁，注销此代码
+//    [self onChange];
     NSData * sendData = [[self getSearchString] dataUsingEncoding:NSUTF8StringEncoding];
     [_udpSocket sendData:sendData toHost:ssdpAddres port:ssdpPort withTimeout:-1 tag:1];
 }
@@ -103,11 +112,11 @@
 #pragma mark -- GCDAsyncUdpSocketDelegate --
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag{
     CLLog(@"发送信息成功");
-     __weak typeof (self) weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(weakSelf.searchTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        weakSelf.receiveDevice = NO;
-        CLLog(@"搜索结束");
-    });
+//     __weak typeof (self) weakSelf = self;
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(weakSelf.searchTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        weakSelf.receiveDevice = NO;
+//        CLLog(@"搜索结束");
+//    });
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError * _Nullable)error{
