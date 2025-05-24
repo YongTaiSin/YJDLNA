@@ -1,0 +1,23 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - YJDLNA (0.1.1):
+    - CocoaAsyncSocket (= 7.6.3)
+
+DEPENDENCIES:
+  - YJDLNA (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaAsyncSocket
+
+EXTERNAL SOURCES:
+  YJDLNA:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  YJDLNA: 7954efd1c382c0205fb5cfb89d82ad182c91052f
+
+PODFILE CHECKSUM: 7fe671e1be60e60d1fb7554f874bf4b30b87cc32
+
+COCOAPODS: 1.16.2

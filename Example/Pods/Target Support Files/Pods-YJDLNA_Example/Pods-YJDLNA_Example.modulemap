@@ -1,0 +1,6 @@
+framework module Pods_YJDLNA_Example {
+  umbrella header "Pods-YJDLNA_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
