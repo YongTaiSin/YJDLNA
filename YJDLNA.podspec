@@ -29,17 +29,20 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
+  s.swift_versions = '5.0'
   s.static_framework = true
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.source_files = 'YJDLNA/Classes/**/*'
-  
+  s.public_header_files = 'YJDLNA/Classes/**/*.h'
+
   s.libraries = 'icucore', 'c++', 'z', 'xml2'
   
-  s.dependency 'CocoaAsyncSocket', '7.6.3'
+  s.dependency 'CocoaAsyncSocket'
   
-  s.xcconfig = {'ENABLE_BITCODE' => 'NO',
+  s.xcconfig = {
+      'ENABLE_BITCODE' => 'NO',
       'HEADER_SEARCH_PATHS' => '${SDKROOT}/usr/include/libxml2',
       'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }

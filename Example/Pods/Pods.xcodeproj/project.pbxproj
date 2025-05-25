@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		053BEE1727AC64B61C7E2FE7B2A590AD /* CLUPnPRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FFF2A4AA5D87462424BAC95B220E58 /* CLUPnPRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0757928D54B4F9F060006ECE086D730C /* CLUPnPRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD464D18FFF19B1AE6BAA6B0E9A730C /* CLUPnPRenderer.m */; };
+		08495F2DAFA36769FC16758CFDAC1F67 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A9B6CEB7A4373DC0D4DCB1C9C5E465 /* GCDAsyncUdpSocket.m */; };
 		0A8299CC3260DB5C834820A787A942DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACAAC876EF7F0E867591D2662CCC04 /* Foundation.framework */; };
 		0BF77394EAA86673E7948ECD9871D89F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C5F737A1EBAC18257D3F8209A71C4A /* Security.framework */; };
 		0CD72127DA641AD9C10CF2DB2D352C6D /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D53D2468F4A76F969B555628969C00 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E383F80323CB08AFA573750D6F13BB3 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DEE8A2C9D85B1AE3111A98DABA3911 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		138463D749696B86F3324AC0882A64EB /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DEE8A2C9D85B1AE3111A98DABA3911 /* GCDAsyncSocket.m */; };
 		147A5463FF6FFE40426B898B60344085 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D326EF5E0EBD3DA4F2B6DB4F0990F560 /* CFNetwork.framework */; };
 		1563C45425B8B6D916E54FC24C1410B5 /* CLUPnPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B362BDB7E9BDEA7F946FB54EEE15DC0 /* CLUPnPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19B044B87DB387F16F9E7C258DEEA5EE /* CLUPnPAVPositionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 525117696D0A1674B231D5BAD69C0A8F /* CLUPnPAVPositionInfo.m */; };
@@ -33,9 +34,9 @@
 		596E9A6D246E2CB29865B3B0DA0715B8 /* CLUPnPAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FA3A85CD7B61F3EAB441EA977CA3E5 /* CLUPnPAction.m */; };
 		5E1816E04C728D10F94D24205FB52077 /* CLUPnPAVPositionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 286B8076749AED2241341DC6C7EEE5B8 /* CLUPnPAVPositionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FB6208018D38E7B0D62965EFF828FF7 /* CLUPnPResponseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF38F9DD59309684E2874076E201799 /* CLUPnPResponseDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69B92D1883A2D2069444FAE5AAE6272A /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F280BBE43CE867EB51D76410E472 /* CocoaAsyncSocket-dummy.m */; };
 		6AA684642E0AE1A553856B2B4BF85451 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACAAC876EF7F0E867591D2662CCC04 /* Foundation.framework */; };
 		6BFCF1C458F5A03144FB11DE7CD0CC5F /* CLUPnPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D8AB86B20354505FFE42FB58CB785C /* CLUPnPAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F42F4D1146392FF954568A38C93CA33 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F280BBE43CE867EB51D76410E472 /* CocoaAsyncSocket-dummy.m */; };
 		84EBB188DC7F12B3A91696A39092A559 /* YJDLNA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6E662533295355EE73DD3AA7A60335 /* YJDLNA-dummy.m */; };
 		88678895EFAB5407B7C2159614B35ACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACAAC876EF7F0E867591D2662CCC04 /* Foundation.framework */; };
 		95621F7EE7F56B1ACF4141E6EFB175A8 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C8710A4087DF748E081735FBBBC2E72B /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,7 +44,6 @@
 		A3F887AB36C43348195F175038622A17 /* CLUPnPDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = BF628569004EF0AE9453E4155DA3D149 /* CLUPnPDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A60069E92BE669330822336734FC58D7 /* CLXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C896604A35D683F530682F6D917318B4 /* CLXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B50D35310EB4C98E3C213F5646E33354 /* Device.xml in Sources */ = {isa = PBXBuildFile; fileRef = 5F92BBCFDC869376E8A31E287C87F5D8 /* Device.xml */; };
-		D00EE1CDEEE29B32DA55E4CFEEE99388 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A9B6CEB7A4373DC0D4DCB1C9C5E465 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DC9EEFA15783BB02483363B66AF94E6F /* Pods-YJDLNA_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DF8490DDCFEFD2A19EF87F2139BBA8 /* Pods-YJDLNA_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F192582BD8012C682FD0310CD2AA4A84 /* YJDLNA.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE731EE3BE7BC04C85A94685318254F /* YJDLNA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F353FF53419EDA160E3B136F2B577D25 /* CLXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B63C077CCDB1E82B708280794D37CB /* CLXMLDocument.m */; };
@@ -438,7 +438,7 @@
 			buildConfigurationList = 7C5D55F9FC3A8A30A56D403120D1C06B /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
 			buildPhases = (
 				E00DD05508D994002EFC16C8D151D97D /* Headers */,
-				77AA6DACB126F75628F6F6A7F5723214 /* Sources */,
+				2A77BB83B89C22992F39A72E779418C7 /* Sources */,
 				FA3F4FA98DFFB612E3B16EA4A609DAB7 /* Frameworks */,
 				702F664334E9016A4CD711650A9506CA /* Resources */,
 			);
@@ -581,13 +581,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77AA6DACB126F75628F6F6A7F5723214 /* Sources */ = {
+		2A77BB83B89C22992F39A72E779418C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F42F4D1146392FF954568A38C93CA33 /* CocoaAsyncSocket-dummy.m in Sources */,
-				0E383F80323CB08AFA573750D6F13BB3 /* GCDAsyncSocket.m in Sources */,
-				D00EE1CDEEE29B32DA55E4CFEEE99388 /* GCDAsyncUdpSocket.m in Sources */,
+				69B92D1883A2D2069444FAE5AAE6272A /* CocoaAsyncSocket-dummy.m in Sources */,
+				138463D749696B86F3324AC0882A64EB /* GCDAsyncSocket.m in Sources */,
+				08495F2DAFA36769FC16758CFDAC1F67 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,12 +648,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00F09E1CA68E6FE2626F9D0EF7BB088F /* Debug */ = {
+		014A9844585BE5315C39A40952206971 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFE6EFEA25C59012E9186734C43C7480 /* YJDLNA.debug.xcconfig */;
+			baseConfigurationReference = 72F29FE7499B83FB5FD580208F4E0F8D /* CocoaAsyncSocket.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_ALLOWED_FOR_SIMULATOR = NO;
 				CODE_SIGNING_REQUIRED = NO;
@@ -671,27 +670,27 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				GCC_PREFIX_HEADER = "Target Support Files/YJDLNA/YJDLNA-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/YJDLNA/YJDLNA-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/YJDLNA/YJDLNA.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_MODULE_NAME = YJDLNA;
-				PRODUCT_NAME = YJDLNA;
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		0E039D8BCB8F5509F0161C7DA8C61473 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -737,6 +736,49 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		1D9D3A5918EF672BA4AA109691D9BB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7CF9F2D85AD6EB2D9F534DBEC491A7 /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_ALLOWED_FOR_SIMULATOR = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -804,93 +846,6 @@
 			};
 			name = Debug;
 		};
-		5C260C61F81AB56F6335FEAEB93F23BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72F29FE7499B83FB5FD580208F4E0F8D /* CocoaAsyncSocket.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_ALLOWED_FOR_SIMULATOR = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
-				PRODUCT_NAME = CocoaAsyncSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5D3BA5C88E8F15AC2DA9FC3DDE375A68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A7CF9F2D85AD6EB2D9F534DBEC491A7 /* CocoaAsyncSocket.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_ALLOWED_FOR_SIMULATOR = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
-				PRODUCT_NAME = CocoaAsyncSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -952,6 +907,51 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		6AFE6AA5BE2F1A2E84F1E937921B99F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE6EFEA25C59012E9186734C43C7480 /* YJDLNA.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_ALLOWED_FOR_SIMULATOR = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREFIX_HEADER = "Target Support Files/YJDLNA/YJDLNA-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/YJDLNA/YJDLNA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/YJDLNA/YJDLNA.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_MODULE_NAME = YJDLNA;
+				PRODUCT_NAME = YJDLNA;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		939F8C0BA71ABF6C384DCD20922BF77A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1086,7 +1086,7 @@
 			};
 			name = Release;
 		};
-		CA2FB69E4E82E2BD7CB28A9217BC786B /* Release */ = {
+		CFF081B04808ABADADFB32913349045E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8351F28D802BC6CECC414E600CCD597C /* YJDLNA.release.xcconfig */;
 			buildSettings = {
@@ -1124,7 +1124,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1156,8 +1156,8 @@
 		7C5D55F9FC3A8A30A56D403120D1C06B /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D3BA5C88E8F15AC2DA9FC3DDE375A68 /* Debug */,
-				5C260C61F81AB56F6335FEAEB93F23BA /* Release */,
+				1D9D3A5918EF672BA4AA109691D9BB86 /* Debug */,
+				014A9844585BE5315C39A40952206971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1165,8 +1165,8 @@
 		8088AA5ECEF9F5BCCFC134D06395CD28 /* Build configuration list for PBXNativeTarget "YJDLNA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00F09E1CA68E6FE2626F9D0EF7BB088F /* Debug */,
-				CA2FB69E4E82E2BD7CB28A9217BC786B /* Release */,
+				6AFE6AA5BE2F1A2E84F1E937921B99F8 /* Debug */,
+				CFF081B04808ABADADFB32913349045E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
