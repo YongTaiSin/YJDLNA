@@ -45,7 +45,7 @@ pod 'YJDLNA'
 - Play Control
 
 ```
-@property(nonatomic,strong) MRDLNA *dlnaManager;
+@property(nonatomic,strong) YJDLNA *dlnaManager;
 
 #pragma mark -Play Control
 
